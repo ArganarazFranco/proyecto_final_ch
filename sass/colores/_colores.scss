@@ -1,0 +1,12 @@
+.navegacion{
+    background-color: greenyellow !important;
+}
+body{
+    background-color: black;
+}
+.color{
+    color: map-get($map, blanco);
+}
+.verde{
+    color: map-get($map, verde);
+}

@@ -1,0 +1,42 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+.center{
+    text-align: center;
+}
+.navegacionH1{
+    @extend .center;
+    font-size: 1.75rem;
+}
+.cuerpo{
+    @extend .center;
+}
+.cuerpoTitulo{
+    font-size: 1.60rem;
+    background-color: chartreuse;
+    border-radius: 10px;
+    display: inline;
+}
+h1{
+    @extend .center;
+}
+h2{
+    @extend .center;
+}
+.textoEstructura{
+    font-size: 2rem;
+}
+@media (max-width:500px){
+    .textoEstructura{
+        font-size: 1.2rem !important;
+    }
+}
+@media (min-width:992px) and (max-width:1200px){
+    .textoEstructura{
+        font-size: 1.5rem;
+    }
+}
+.start{
+    text-align: start;
+}

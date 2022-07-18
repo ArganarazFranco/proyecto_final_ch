@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.navegacion {
+  background-color: greenyellow !important; }
+
+body {
+  background-color: black; }
+
+.color {
+  color: white; }
+
+.verde {
+  color: green; }
+
+.logo {
+  width: 65px;
+  height: 65px; }
+
+iframe {
+  width: 100%;
+  padding: 10px;
+  height: 350px; }
+
+.imagenChica {
+  width: 100%;
+  height: 100%; }
+
+.tarjetaTitulo {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 10px; }
+
+.tarjetaVinculo {
+  text-decoration: none; }
+
+.tarjetaGaleria {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0; }
+
+.tarjetaContenido {
+  width: 20%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: .4s;
+  background: #f2f2f2; }
+
+.tarjetaContenido:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translate(0px, -8px); }
+
+.tarjetaImagen {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block; }
+
+.tarjetaTexto {
+  text-align: center;
+  color: aqua;
+  padding-top: 0 8px; }
+
+.tarjetaSubtitulo {
+  font-size: 26px;
+  text-align: center;
+  color: bisque;
+  margin: 0; }
+
+.tarjetaUl {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; }
+
+.tarjetaLi {
+  padding: 5px; }
+
+.tarjetaFa {
+  font-size: 26px;
+  transition: .4s;
+  margin: 3px; }
+
+.tarjetaFa:hover {
+  transform: scale(1.3);
+  transition: .6s; }
+
+.tarjetaPuntuacion {
+  color: yellow; }
+
+.tarjetaBoton {
+  text-align: center;
+  font-size: 24px;
+  color: brown;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px; }
+
+.tarjetaCompra {
+  background: crimson; }
+
+@media (max-width: 1000px) {
+  .tarjetaContenido {
+    width: 45%; } }
+@media (max-width: 750px) {
+  .tarjetaContenido {
+    width: 100%; } }
+a {
+  text-decoration: none;
+  color: black; }
+
+.center, .navegacionH1, .cuerpo, h1, h2 {
+  text-align: center; }
+
+.navegacionH1 {
+  font-size: 1.75rem; }
+
+.cuerpoTitulo {
+  font-size: 1.60rem;
+  background-color: chartreuse;
+  border-radius: 10px;
+  display: inline; }
+
+.textoEstructura {
+  font-size: 2rem; }
+
+@media (max-width: 500px) {
+  .textoEstructura {
+    font-size: 1.2rem !important; } }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .textoEstructura {
+    font-size: 1.5rem; } }
+.start {
+  text-align: start; }
+
+.fotos {
+  padding: 2vh 7.5vw; }
+
+.fotosGrilla {
+  height: 100vh;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 13vh);
+  grid-template-areas: "foto1 foto1 foto2 foto2" "foto3 foto3 foto2 foto2" "foto4 foto4 foto5 foto6" "foto4 foto4 foto7 foto8" "foto9 foto9 foto9 foto10" "foto11 foto11 foto12 foto12"; }
+
+.fotosGrilla > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.foto1 {
+  grid-area: foto1; }
+
+.foto2 {
+  grid-area: foto2; }
+
+.foto3 {
+  grid-area: foto3; }
+
+.foto4 {
+  grid-area: foto4; }
+
+.foto5 {
+  grid-area: foto5; }
+
+.foto6 {
+  grid-area: foto6; }
+
+.foto7 {
+  grid-area: foto7; }
+
+.foto8 {
+  grid-area: foto8; }
+
+.foto9 {
+  grid-area: foto9; }
+
+.foto10 {
+  grid-area: foto10; }
+
+.foto11 {
+  grid-area: foto11; }
+
+.foto12 {
+  grid-area: foto12; }
+
+@media (min-width: 992px) {
+  .fotos {
+    padding: 2vh 7.5vw; }
+
+  .fotosGrilla {
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 23vh);
+    grid-template-areas: "foto1 foto1 foto2 foto3 foto6" "foto1 foto1 foto4 foto5 foto6" "foto7 foto8 foto8 foto9 foto10" "foto7 foto8 foto8 foto11 foto12"; }
+
+  .fotosGrilla > img {
+    transition: 0.3s; }
+
+  .fotosGrilla img:hover {
+    transform: scale(1.5);
+    box-shadow: -12px 47px 400px -15px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: -12px 47px 400px -15px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: -12px 47px 400px -15px rgba(0, 0, 0, 0.71); }
+
+  .foto1 {
+    grid-area: foto1; }
+
+  .foto2 {
+    grid-area: foto2; }
+
+  .foto3 {
+    grid-area: foto3; }
+
+  .foto4 {
+    grid-area: foto4; }
+
+  .foto5 {
+    grid-area: foto5; }
+
+  .foto6 {
+    grid-area: foto6; }
+
+  .foto7 {
+    grid-area: foto7; }
+
+  .foto8 {
+    grid-area: foto8; }
+
+  .foto9 {
+    grid-area: foto9; }
+
+  .foto10 {
+    grid-area: foto10; }
+
+  .foto11 {
+    grid-area: foto11; }
+
+  .foto12 {
+    grid-area: foto12; } }
+
+/*# sourceMappingURL=main.css.map */
